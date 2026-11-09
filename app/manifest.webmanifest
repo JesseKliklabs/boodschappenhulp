@@ -1,0 +1,30 @@
+{
+  "name": "Boodschappenhulp Leek",
+  "short_name": "Boodschappenhulp",
+  "description": "Waar is het in de aanbieding, en waar is het het goedkoopst?",
+  "lang": "nl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f0e8",
+  "theme_color": "#57652b",
+  "icons": [
+    {
+      "src": "icoon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icoon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icoon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

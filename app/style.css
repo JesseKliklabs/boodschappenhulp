@@ -1,0 +1,781 @@
+/* Boodschappenhulp Leek: een boodschappenbriefje in olijf en havermout, met pompoenkleurige prijsstickers.
+   Koppen in Nunito (rond en vriendelijk), tekst in Atkinson Hyperlegible (gemaakt voor slechtziende lezers). */
+
+:root {
+  --papier: #f2f0e8;
+  --kaart: #fbfaf5;
+  --inkt: #23261c;
+  --inkt-zacht: #545a46;
+  --lijn: #dcd8c8;
+  --regel: rgba(87, 101, 43, 0.1);
+  --olijf: #57652b;
+  --olijf-tekst: #fbfaf5;
+  --olijf-accent: #57652b;
+  --olijf-zacht: #e8ebd8;
+  --pompoen: #d97b29;
+  --pompoen-zacht: #f8e7d4;
+  --sticker-inkt: #23261c;
+  --rood: #a4251c;
+  --schaduw: 0 1px 0 rgba(35, 38, 28, 0.05), 0 8px 20px -10px rgba(35, 38, 28, 0.3);
+
+  --letter: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --kopletter: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --papier: #15170f;
+    --kaart: #1f2218;
+    --inkt: #efeee4;
+    --inkt-zacht: #b8bca8;
+    --lijn: #353a29;
+    --regel: rgba(239, 238, 228, 0.04);
+    --olijf: #434f1e;
+    --olijf-tekst: #efeee4;
+    --olijf-accent: #b9c97c;
+    --olijf-zacht: #2a3119;
+    --pompoen: #e08a3c;
+    --pompoen-zacht: #3a2915;
+    --rood: #ff8a7a;
+    --schaduw: 0 1px 0 rgba(0, 0, 0, 0.3), 0 10px 22px -12px rgba(0, 0, 0, 0.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --papier: #15170f;
+  --kaart: #1f2218;
+  --inkt: #efeee4;
+  --inkt-zacht: #b8bca8;
+  --lijn: #353a29;
+  --regel: rgba(239, 238, 228, 0.04);
+  --olijf: #434f1e;
+  --olijf-tekst: #efeee4;
+  --olijf-accent: #b9c97c;
+  --olijf-zacht: #2a3119;
+  --pompoen: #e08a3c;
+  --pompoen-zacht: #3a2915;
+  --rood: #ff8a7a;
+  --schaduw: 0 1px 0 rgba(0, 0, 0, 0.3), 0 10px 22px -12px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--letter);
+  font-size: 20px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  font-family: var(--kopletter);
+}
+
+.klein {
+  margin: 2px 0 0;
+  font-size: 17px;
+  color: var(--inkt-zacht);
+}
+
+/* --- kop -------------------------------------------------------------------------------------- */
+
+.kop {
+  background: var(--olijf);
+  color: var(--olijf-tekst);
+  padding: calc(env(safe-area-inset-top) + 20px) 16px 30px;
+  position: relative;
+}
+/* gekartelde onderrand, als een afgescheurd briefje */
+.kop::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  height: 12px;
+  background: radial-gradient(circle at 10px -2px, var(--olijf) 9px, transparent 10px) 0 0 / 20px 12px repeat-x;
+}
+.kop-binnen,
+main,
+.voet {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.appnaam {
+  margin: 0 0 6px;
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+h1 {
+  font-weight: 900;
+  font-size: clamp(38px, 10.5vw, 52px);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.week {
+  margin: 8px 0 0;
+  font-size: 19px;
+}
+
+main {
+  padding: 30px 16px 8px;
+}
+
+/* --- invoer ----------------------------------------------------------------------------------- */
+
+.invoer label {
+  display: block;
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.invoer-rij {
+  display: flex;
+  gap: 10px;
+}
+.invoer input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 22px;
+  padding: 14px 16px;
+  min-height: 60px;
+  border: 3px solid var(--inkt);
+  border-radius: 16px;
+  background: var(--kaart);
+  color: var(--inkt);
+}
+.invoer input::placeholder {
+  color: var(--inkt-zacht);
+  opacity: 0.8;
+}
+.invoer input:focus-visible,
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 4px solid var(--pompoen);
+  outline-offset: 2px;
+}
+.invoer button {
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 22px;
+  min-height: 60px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--olijf);
+  color: var(--olijf-tekst);
+  cursor: pointer;
+}
+.invoer button:active {
+  transform: translateY(1px);
+}
+/* suggesties onder het invoerveld */
+.suggesties {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 6px;
+  background: var(--kaart);
+  border: 3px solid var(--inkt);
+  border-radius: 16px;
+  box-shadow: var(--schaduw);
+}
+.suggesties button {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--inkt);
+  font: inherit;
+  font-size: 21px;
+  text-align: left;
+  cursor: pointer;
+}
+.suggesties li + li {
+  border-top: 1px solid var(--lijn);
+}
+.suggesties .sugg-kop + li {
+  border-top: 0;
+}
+.suggesties button:hover,
+.suggesties button:active {
+  background: var(--olijf-zacht);
+}
+.sugg-woord {
+  overflow-wrap: anywhere;
+}
+.sugg-woord b {
+  font-weight: 700;
+}
+.sugg-actie {
+  flex: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--pompoen);
+  color: var(--sticker-inkt);
+}
+.sugg-kop {
+  padding: 6px 12px 2px;
+  font-size: 16px;
+  color: var(--inkt-zacht);
+}
+
+.bedoeld {
+  margin: 10px 0 8px;
+  color: var(--inkt-zacht);
+}
+.bedoeld-knop {
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 22px;
+  min-height: 52px;
+  padding: 6px 18px;
+  border-radius: 14px;
+  border: 3px solid var(--olijf-accent);
+  background: var(--olijf-zacht);
+  color: var(--inkt);
+  cursor: pointer;
+}
+
+.hint {
+  margin: 8px 2px 0;
+  font-size: 17px;
+  color: var(--inkt-zacht);
+}
+
+.voorbeelden {
+  margin-top: 26px;
+}
+.voorbeelden p {
+  margin: 0 0 10px;
+  color: var(--inkt-zacht);
+  font-size: 18px;
+}
+.knoppen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.knoppen button {
+  font: inherit;
+  font-size: 19px;
+  min-height: 48px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  border: 2px solid var(--lijn);
+  background: var(--kaart);
+  color: var(--inkt);
+  cursor: pointer;
+}
+
+.status {
+  margin: 20px 0 0;
+  font-size: 18px;
+  color: var(--inkt-zacht);
+}
+.status:empty {
+  display: none;
+}
+.status--fout {
+  color: var(--rood);
+  font-weight: 700;
+}
+
+/* --- winkel-labels: de naam in een vakje in de kleur van de winkel ----------------------------- */
+
+.winkel {
+  display: inline-block;
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.2;
+  padding: 4px 10px 5px;
+  border-radius: 8px;
+  white-space: nowrap;
+  background: var(--inkt-zacht);
+  color: #fff;
+}
+.winkel--ah { background: #1769b3; }
+.winkel--jumbo { background: #f2c200; color: #23261c; }
+.winkel--lidl { background: #0f3f8c; }
+.winkel--aldi { background: #08739f; }
+.winkel--poiesz { background: #b71c30; }
+
+/* --- overzicht --------------------------------------------------------------------------------- */
+
+.overzicht {
+  margin-top: 28px;
+  padding: 18px;
+  border: 3px solid var(--olijf-accent);
+  border-radius: 18px;
+  background: var(--kaart);
+  scroll-margin-top: 12px;
+}
+.overzicht h2 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+.beste-winkel {
+  background: var(--olijf-zacht);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.beste-winkel .winkel {
+  font-size: 22px;
+  padding: 6px 14px 7px;
+}
+.beste-winkel p {
+  margin: 10px 0 0;
+}
+.beste-winkel .klein {
+  margin-top: 4px;
+}
+.overzicht ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+.overzicht li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--lijn);
+}
+.overzicht li:first-child {
+  border-top: 0;
+}
+.overzicht li .klein {
+  margin: 0;
+}
+
+/* --- kaarten ----------------------------------------------------------------------------------- */
+
+.lijst {
+  scroll-margin-top: 12px;
+}
+.kaart {
+  margin-top: 24px;
+  padding: 8px 16px 16px;
+  background-color: var(--kaart);
+  /* gelinieerd papier */
+  background-image: repeating-linear-gradient(to bottom, transparent 0 31px, var(--regel) 31px 32px);
+  border-radius: 18px;
+  box-shadow: var(--schaduw);
+  border-left: 6px solid var(--olijf);
+  animation: erin 0.35s ease-out both;
+  animation-delay: calc(min(var(--i), 6) * 50ms);
+}
+@keyframes erin {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.kaart-kop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.kaart h2 {
+  flex: 1;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+
+.vink,
+.weg {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.vink {
+  border: 3px solid var(--olijf-accent);
+  background: transparent;
+  position: relative;
+}
+.vink::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 7px;
+  width: 11px;
+  height: 21px;
+  border: solid var(--olijf-tekst);
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.vink[aria-pressed='true'] {
+  background: var(--olijf);
+  border-color: var(--olijf);
+}
+.vink[aria-pressed='true']::after {
+  opacity: 1;
+}
+.weg {
+  border: 2px solid var(--lijn);
+  background: transparent;
+  color: var(--inkt-zacht);
+  font-size: 20px;
+}
+.weg:hover {
+  color: var(--rood);
+  border-color: currentColor;
+}
+
+/* afgevinkt: klein en doorgestreept onderaan */
+.mandje {
+  margin: 36px 0 0;
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--inkt-zacht);
+}
+.kaart--klaar {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-image: none;
+  box-shadow: none;
+  border: 2px solid var(--lijn);
+  border-left-width: 6px;
+  opacity: 0.75;
+}
+.kaart--klaar h2 {
+  font-size: 24px;
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  color: var(--inkt-zacht);
+}
+
+/* twee vakjes naast elkaar: beste aanbieding | normaal goedkoopst */
+.duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.vak {
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+.vak h3 {
+  margin: 0 0 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--inkt-zacht);
+}
+.vak p {
+  margin: 0;
+}
+.vak--actie {
+  background: var(--pompoen-zacht);
+}
+.vak--normaal {
+  background: var(--olijf-zacht);
+}
+.vak--leeg {
+  border: 2px dashed var(--lijn);
+}
+.vak-naam {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vak-prijs {
+  font-family: var(--kopletter);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.1;
+}
+.vak-prijs small {
+  font-family: var(--letter);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--inkt-zacht);
+}
+.vak .klein {
+  font-size: 16px;
+}
+
+.niets {
+  margin: 0;
+  color: var(--inkt-zacht);
+  font-size: 18px;
+}
+
+/* de prijssticker */
+.sticker {
+  background: var(--pompoen);
+  color: var(--sticker-inkt);
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 6px 12px;
+  border-radius: 8px 14px 8px 14px;
+  transform: rotate(-2deg);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.sticker--groot {
+  font-size: 21px;
+  margin: 2px 0 !important;
+  max-width: 100%;
+}
+
+/* --- "Alles bekijken" -------------------------------------------------------------------------- */
+
+.meer {
+  margin-top: 12px;
+}
+.meer summary {
+  cursor: pointer;
+  font-family: var(--kopletter);
+  font-weight: 800;
+  font-size: 20px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  list-style: none;
+  color: var(--olijf-accent);
+}
+.meer summary .klein {
+  font-family: var(--letter);
+  font-weight: 400;
+  margin: 0;
+}
+.meer summary::-webkit-details-marker {
+  display: none;
+}
+.meer summary::before {
+  content: '+';
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  font-size: 22px;
+  line-height: 1;
+}
+.meer[open] summary::before {
+  content: '−';
+}
+
+.kopje {
+  margin: 14px 0 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--inkt-zacht);
+}
+.aantal {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--olijf-zacht);
+  color: var(--inkt);
+  font-size: 17px;
+}
+
+.acties {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.actie {
+  padding: 14px 14px 12px;
+  border: 2px solid var(--lijn);
+  border-radius: 14px;
+  background: var(--kaart);
+}
+.actie-kop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.actie-kop .sticker {
+  max-width: 60%;
+}
+.actie-naam {
+  margin: 10px 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.actie-prijs {
+  margin: 4px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+  align-items: baseline;
+}
+.actieprijs {
+  font-family: var(--kopletter);
+  font-weight: 900;
+  font-size: 24px;
+}
+.per {
+  color: var(--inkt-zacht);
+  font-size: 17px;
+}
+.actie a,
+.voet a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 3px;
+  /* groter tikvlak zonder dat het er anders uitziet */
+  padding: 10px 4px;
+  margin: -10px -4px;
+}
+
+.prijzen {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.prijs {
+  padding: 10px 0;
+  border-top: 1px dashed var(--lijn);
+}
+.prijs:first-child {
+  border-top: 0;
+}
+.prijs-kop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.prijs-per {
+  font-weight: 700;
+  font-size: 21px;
+  white-space: nowrap;
+}
+.prijs-per small {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--inkt-zacht);
+}
+.prijs-naam {
+  margin: 4px 0 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.prijs-per {
+  font-family: var(--kopletter);
+  font-weight: 900;
+  font-size: 24px;
+}
+.prijs--beste {
+  background: var(--olijf-zacht);
+  margin: 0 -10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* --- onderkant --------------------------------------------------------------------------------- */
+
+.wis-rij {
+  text-align: center;
+  margin: 32px 0 0;
+}
+.wissen {
+  font: inherit;
+  font-size: 18px;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 14px;
+  border: 2px solid var(--lijn);
+  background: transparent;
+  color: var(--inkt-zacht);
+  cursor: pointer;
+}
+
+.voet {
+  padding: 28px 16px calc(env(safe-area-inset-bottom) + 40px);
+  font-size: 17px;
+  color: var(--inkt-zacht);
+}
+.voet ul {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+.voet li {
+  margin-bottom: 6px;
+}
+.bijgewerkt {
+  margin-top: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kaart {
+    animation: none;
+  }
+  .sticker {
+    transform: none;
+  }
+}

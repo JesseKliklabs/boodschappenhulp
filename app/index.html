@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Boodschappenhulp Leek</title>
+  <meta name="description" content="Waar is het in de aanbieding, en waar is het het goedkoopst? AH, Jumbo, Lidl, Aldi en Poiesz in Leek.">
+  <meta name="theme-color" content="#57652b">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icoon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Boodschappenhulp">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="kop">
+    <div class="kop-binnen">
+      <p class="appnaam">Boodschappenhulp Leek</p>
+      <h1 id="groet">Hallo!</h1>
+      <p class="week" id="week">&nbsp;</p>
+    </div>
+  </header>
+
+  <main>
+    <form id="invoer" class="invoer" autocomplete="off">
+      <label for="wat">Wat wil je halen?</label>
+      <div class="invoer-rij">
+        <input id="wat" name="wat" type="text" enterkeyhint="done" placeholder="bijv. melk, eieren"
+               autocapitalize="none" autocorrect="off" spellcheck="false"
+               role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggesties">
+        <button type="submit">Erbij</button>
+      </div>
+      <ul id="suggesties" class="suggesties" hidden aria-label="Suggesties"></ul>
+      <p class="hint">Meer dingen tegelijk? Zet er een komma tussen.</p>
+    </form>
+
+    <div id="voorbeelden" class="voorbeelden" hidden></div>
+    <p id="status" class="status" role="status">Prijzen laden…</p>
+
+    <section id="overzicht" class="overzicht" hidden aria-labelledby="overzicht-titel"></section>
+    <section id="lijst" class="lijst" aria-label="Je boodschappen"></section>
+
+    <p class="wis-rij"><button id="wissen" class="wissen" type="button" hidden>Hele lijst leegmaken</button></p>
+  </main>
+
+  <footer class="voet">
+    <p><strong>Goed om te weten</strong></p>
+    <ul>
+      <li>De aanbiedingen worden elke ochtend opgehaald. Alleen wat vandaag geldt staat erin, online-acties niet.</li>
+      <li>Albert Heijn komt uit de Bonusfolder. Twijfel je, tik dan op "bekijk" om de folderpagina te zien.</li>
+      <li>Bij Aldi kennen we alleen de aanbiedingen, niet de gewone prijzen.</li>
+      <li>De gewone prijzen zijn de webwinkelprijzen. In de winkel kan het soms een paar cent schelen.</li>
+    </ul>
+    <p id="bijgewerkt" class="bijgewerkt"></p>
+  </footer>
+</body>
+</html>

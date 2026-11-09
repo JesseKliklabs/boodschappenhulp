@@ -1,0 +1,19 @@
+{
+  "name": "boodschappen-ophaler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Haalt dagelijks de aanbiedingen van supermarkten in Leek op en zet ze in één formaat.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "ophalen": "node src/run.js",
+    "test": "node --test",
+    "app": "node scripts/serve.js",
+    "iconen": "node scripts/maak-iconen.js"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.10.38"
+  }
+}

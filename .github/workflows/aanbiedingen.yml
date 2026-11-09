@@ -1,0 +1,100 @@
+name: Aanbiedingen ophalen en publiceren
+
+on:
+  schedule:
+    # Elke ochtend 05:15 UTC (06:15 's winters / 07:15 's zomers in NL).
+    # Dagelijks omdat de ketens op verschillende dagen wisselen (AH ma, Jumbo wo, Aldi ma/wo/vr/za, Poiesz zo).
+    - cron: '15 5 * * *'
+  workflow_dispatch: {}
+  # Na een wijziging aan de app zelf alleen opnieuw publiceren.
+  push:
+    branches: [main]
+    paths: ["app/**", "index.html"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: aanbiedingen
+  cancel-in-progress: false
+
+jobs:
+  ophalen:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Pakketten installeren
+        run: npm ci
+
+      - name: Tests
+        run: npm test
+
+      - name: Aanbiedingen ophalen
+        run: node src/run.js
+
+      - name: Oude bestanden opruimen (archief na 120 dagen, AH-cache na 30)
+        # Op datum in de bestandsnaam: na een checkout hebben alle bestanden een verse wijzigingsdatum.
+        run: |
+          grens_archief=$(date -d '120 days ago' +%F)
+          for f in data/archief/*.json; do
+            [ -e "$f" ] && [[ "$(basename "$f" .json)" < "$grens_archief" ]] && rm "$f"
+          done
+          grens_week=$(date -d '30 days ago' +%G%V)
+          for f in data/cache/ah-bonus-week-*.json; do
+            [ -e "$f" ] || continue
+            if [[ "$(basename "$f")" =~ week-([0-9]+)-([0-9]{4}) ]]; then
+              (( 10#${BASH_REMATCH[2]}$(printf %02d $((10#${BASH_REMATCH[1]}))) < 10#$grens_week )) && rm "$f"
+            fi
+          done
+          true
+
+      - name: Opslaan in repository
+        run: |
+          git config user.name "aanbiedingen-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "Aanbiedingen $(TZ=Europe/Amsterdam date +%F)"
+            git push
+          fi
+
+  # De app en de verse data op GitHub Pages zetten. Alleen app/, data/ en index.html gaan online.
+  publiceren:
+    needs: ophalen
+    if: ${{ !cancelled() && needs.ophalen.result != failure }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}app/
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # inclusief de commit met nieuwe aanbiedingen van hierboven
+
+      - name: Site samenstellen
+        run: |
+          mkdir _site
+          cp -r app index.html _site/
+          mkdir _site/data
+          cp -r data/aanbiedingen.json data/prijzen.json data/archief _site/data/
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
