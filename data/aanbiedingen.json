@@ -1,31 +1,31 @@
 {
- "opgehaald_op": "2026-11-09T16:22:39.894Z",
+ "opgehaald_op": "2026-11-09T17:26:23.567Z",
  "datum": "2026-11-09",
  "winkels": {
   "jumbo": {
    "ok": true,
    "aantal": 215,
-   "ms": 623
+   "ms": 1131
   },
   "aldi": {
    "ok": true,
    "aantal": 188,
-   "ms": 146
+   "ms": 1269
   },
   "poiesz": {
    "ok": true,
    "aantal": 182,
-   "ms": 413
+   "ms": 1199
   },
   "lidl": {
    "ok": true,
    "aantal": 47,
-   "ms": 550
+   "ms": 946
   },
   "ah": {
    "ok": true,
    "aantal": 104,
-   "ms": 125
+   "ms": 413
   }
  },
  "aanbiedingen": [
