@@ -9,7 +9,7 @@ on:
   # Na een wijziging aan de app zelf alleen opnieuw publiceren.
   push:
     branches: [main]
-    paths: ["app/**", "index.html"]
+    paths: ["app/**", "index.html", ".github/workflows/**"]
 
 permissions:
   contents: write
@@ -73,7 +73,7 @@ jobs:
   # De app en de verse data op GitHub Pages zetten. Alleen app/, data/ en index.html gaan online.
   publiceren:
     needs: ophalen
-    if: ${{ !cancelled() && needs.ophalen.result != failure }}
+    if: ${{ !cancelled() && needs.ophalen.result != 'failure' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
