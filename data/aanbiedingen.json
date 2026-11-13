@@ -1,26 +1,26 @@
 {
- "opgehaald_op": "2026-11-12T06:10:36.141Z",
- "datum": "2026-11-12",
+ "opgehaald_op": "2026-11-13T06:06:41.448Z",
+ "datum": "2026-11-13",
  "winkels": {
   "jumbo": {
    "ok": true,
-   "aantal": 139,
-   "ms": 1351
+   "aantal": 137,
+   "ms": 913
   },
   "aldi": {
    "ok": true,
    "aantal": 188,
-   "ms": 1029
+   "ms": 111
   },
   "poiesz": {
    "ok": true,
    "aantal": 182,
-   "ms": 1184
+   "ms": 1319
   },
   "lidl": {
    "ok": true,
    "aantal": 47,
-   "ms": 544
+   "ms": 752
   },
   "ah": {
    "ok": false,
@@ -482,7 +482,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-01-07",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Verse maaltijden en gemak",
    "url": "https://www.jumbo.com/aanbiedingen/jumbo-oosterse-maaltijden/3013664",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/km_oostersemaaltijden.png"
@@ -499,7 +499,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-07-15",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Verse maaltijden en gemak",
    "url": "https://www.jumbo.com/aanbiedingen/jumbo-verse-soep/3019566",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/KMsoep2026.png"
@@ -557,23 +557,6 @@
   },
   {
    "winkel": "jumbo",
-   "id": "3022259",
-   "titel": "Sukadelappen",
-   "merk": null,
-   "omschrijving": "Per 100 gram",
-   "actie": "1,59 per 100 gram",
-   "actieprijs": null,
-   "aantal": 1,
-   "normaalprijs": null,
-   "alleen": null,
-   "geldig_van": "2026-11-11",
-   "geldig_tot": "2026-11-17",
-   "categorie": "Vlees, vis en vega",
-   "url": "https://www.jumbo.com/aanbiedingen/sukadelappen/3022259",
-   "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Weekaanbiedingen/Week%2046/Weekaanbiedingen-Week-46_78.png"
-  },
-  {
-   "winkel": "jumbo",
    "id": "3023369",
    "titel": "Jumbo kip- of varkensshoarma",
    "merk": null,
@@ -601,7 +584,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-11-02",
-   "geldig_tot": "2026-11-29",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vlees, vis en vega",
    "url": "https://www.jumbo.com/aanbiedingen/shared-dining/3022315",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/KM%20shared.png"
@@ -618,7 +601,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-01-07",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vlees, vis en vega",
    "url": "https://www.jumbo.com/aanbiedingen/kip-schnitzel-kip-krokant-schnitzel-kip-sate-schnitzel-kip-cordon-bleu-kip-burger-kip-donut-of-kip-gehaktbal/3013649",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Kies%20en%20Mix/KM_schnitzel.png"
@@ -635,7 +618,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-01-07",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vlees, vis en vega",
    "url": "https://www.jumbo.com/aanbiedingen/hamburgers/3013651",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Hamburgers.png"
@@ -652,7 +635,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-05-04",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vlees, vis en vega",
    "url": "https://www.jumbo.com/aanbiedingen/kipreepjes-of-flakes/3016885",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/km_kipreepjes.png"
@@ -907,7 +890,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-11-04",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-11-24",
    "categorie": "Vleeswaren, kaas en tapas",
    "url": "https://www.jumbo.com/aanbiedingen/tapas/3023381",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Kies%20en%20Mix/KM%20tapas%20Nieuw.png"
@@ -924,7 +907,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-01-01",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vleeswaren, kaas en tapas",
    "url": "https://www.jumbo.com/aanbiedingen/jumbo-filet-of-pate/3013667",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Kies%20en%20Mix/KM_fps.png"
@@ -941,7 +924,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-05-27",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vleeswaren, kaas en tapas",
    "url": "https://www.jumbo.com/aanbiedingen/jumbo-brood-en-toast-salades-200-gram/3018200",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2024/Kies%20en%20Mix/KM%20brood%20toast%204-24.png"
@@ -958,7 +941,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-03-11",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Vleeswaren, kaas en tapas",
    "url": "https://www.jumbo.com/aanbiedingen/voorverpakte-vleeswaren/3013668",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/km_vvpvlees.png"
@@ -1322,23 +1305,6 @@
   },
   {
    "winkel": "jumbo",
-   "id": "3021318",
-   "titel": "Alle A-merk chocolade of snoep uitdeelzakken",
-   "merk": null,
-   "omschrijving": "M.u.v. Chocofun mini's",
-   "actie": "2e halve prijs",
-   "actieprijs": null,
-   "aantal": 1,
-   "normaalprijs": null,
-   "alleen": null,
-   "geldig_van": "2026-10-21",
-   "geldig_tot": "2026-11-11",
-   "categorie": "Koek, snoep, chocolade en chips",
-   "url": "https://www.jumbo.com/aanbiedingen/alle-a-merk-chocolade-of-snoep-uitdeelzakken/3021318",
-   "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Weekaanbiedingen/Week%2043/Weekaanbiedingen-Week-43_16.png"
-  },
-  {
-   "winkel": "jumbo",
    "id": "3023143",
    "titel": "Duyvis",
    "merk": null,
@@ -1366,7 +1332,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-03-11",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Koek, snoep, chocolade en chips",
    "url": "https://www.jumbo.com/aanbiedingen/jumbo-koek/3013765",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Kies%20en%20Mix/KMkoekV2.png"
@@ -1383,7 +1349,7 @@
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-03-11",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Koek, snoep, chocolade en chips",
    "url": "https://www.jumbo.com/aanbiedingen/verse-noten/3013643",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Kies%20en%20Mix/KM_noten.png"
@@ -1553,7 +1519,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-05-20",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Frisdrank en sappen",
    "url": "https://www.jumbo.com/aanbiedingen/lipton/3017147",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Omdozen/LiptonTray.png"
@@ -1723,7 +1689,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-01-21",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/heineken-00/3015221",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Omdozen/Heineken0.0%20(1).png"
@@ -1740,7 +1706,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-01-21",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/amstel/3015143",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Omdozen/Amstel.png"
@@ -1757,7 +1723,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-01-01",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/heineken/3013977",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Omdozen/HeinekenTray.png"
@@ -1774,7 +1740,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-01-01",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/hertog-jan/3013978",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2024/HJ-tray.png"
@@ -1791,7 +1757,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-06-10",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/tray-grolsch-pils-blik/3019131",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Omdozen/Grolsch%20omdoos%20v2.png"
@@ -2165,7 +2131,7 @@
    "normaalprijs": null,
    "alleen": "online",
    "geldig_van": "2026-06-17",
-   "geldig_tot": "2026-12-01",
+   "geldig_tot": "2026-12-08",
    "categorie": "Huishouden en dieren",
    "url": "https://www.jumbo.com/aanbiedingen/neutral/3018455",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2025/Omdozen/Neutral.png"
@@ -2482,10 +2448,10 @@
    "titel": "Stamppotaardappelen",
    "merk": "DAYLICIOUS",
    "omschrijving": "1 kg",
-   "actie": null,
-   "actieprijs": 1.49,
+   "actie": "-36%",
+   "actieprijs": 0.95,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 1.49,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -2822,10 +2788,10 @@
    "titel": "Citroenen",
    "merk": null,
    "omschrijving": "500 g",
-   "actie": null,
-   "actieprijs": 1.49,
+   "actie": "-40%",
+   "actieprijs": 0.89,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 1.49,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -2839,10 +2805,10 @@
    "titel": "Pulled pork",
    "merk": "TRADER JOE'S",
    "omschrijving": "550 g",
-   "actie": null,
-   "actieprijs": 4.99,
+   "actie": "-20%",
+   "actieprijs": 3.99,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 4.99,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -3315,10 +3281,10 @@
    "titel": "Truffelsalami met Parmezaanse kaas",
    "merk": null,
    "omschrijving": "70 g",
-   "actie": null,
-   "actieprijs": 2.99,
+   "actie": "-23%",
+   "actieprijs": 2.29,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 2.99,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -3332,10 +3298,10 @@
    "titel": "Kipreepjes",
    "merk": null,
    "omschrijving": "150 g",
-   "actie": null,
-   "actieprijs": 1.99,
+   "actie": "-25%",
+   "actieprijs": 1.49,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 1.99,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -3468,10 +3434,10 @@
    "titel": "Gemarineerde schouderfiletlappen",
    "merk": null,
    "omschrijving": "4 stuks, 450 g",
-   "actie": null,
-   "actieprijs": 4.49,
+   "actie": "-33%",
+   "actieprijs": 2.99,
    "aantal": 1,
-   "normaalprijs": null,
+   "normaalprijs": 4.49,
    "alleen": null,
    "geldig_van": "2026-11-13",
    "geldig_tot": "2026-11-15",
@@ -5339,7 +5305,7 @@
    "merk": "OREO OF DAIM",
    "omschrijving": "3x90 ml/4x110 ml",
    "actie": "OP=OP",
-   "actieprijs": 1.49,
+   "actieprijs": 1.99,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
