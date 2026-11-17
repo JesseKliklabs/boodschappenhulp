@@ -1,31 +1,31 @@
 {
- "opgehaald_op": "2026-11-16T13:37:29.382Z",
- "datum": "2026-11-16",
+ "opgehaald_op": "2026-11-17T14:22:16.789Z",
+ "datum": "2026-11-17",
  "winkels": {
   "jumbo": {
    "ok": true,
    "aantal": 269,
-   "ms": 1200
+   "ms": 1312
   },
   "aldi": {
    "ok": true,
    "aantal": 199,
-   "ms": 184
+   "ms": 261
   },
   "poiesz": {
    "ok": true,
    "aantal": 162,
-   "ms": 1490
+   "ms": 1448
   },
   "lidl": {
    "ok": true,
    "aantal": 46,
-   "ms": 3141
+   "ms": 983
   },
   "ah": {
    "ok": true,
    "aantal": 132,
-   "ms": 240
+   "ms": 268
   }
  },
  "aanbiedingen": [
@@ -5491,7 +5491,7 @@
    "id": "1232941",
    "titel": "Sinterklaas-crèmekoekjes",
    "merk": null,
-   "omschrijving": "Inhoud: 20 stuks, 175 g",
+   "omschrijving": "20 stuks, 175 g",
    "actie": "-15%",
    "actieprijs": 1.69,
    "aantal": 1,
@@ -5501,7 +5501,7 @@
    "geldig_tot": "2026-11-22",
    "categorie": "Sint snoepgoed",
    "url": "https://www.aldi.nl/product/sinterklaas-cremekoekjes-1232941.html",
-   "afbeelding": "https://s7g10.scene7.com/is/image/aldinord/product_1232941_main_cms_1_nl_nl_sinterklaas_cremekoekjes_cw01_2024"
+   "afbeelding": "https://s7g10.scene7.com/is/image/aldinord/product_1232941_main_cms_5_nl_nl_sinterklaas_cremekoekjes_cw01_2024"
   },
   {
    "winkel": "aldi",
@@ -10818,7 +10818,7 @@
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": "2026-10-28",
+   "geldig_van": "2026-11-17",
    "geldig_tot": null,
    "categorie": "Food",
    "url": "https://www.lidl.nl/p/milbona-burrata/p11031013",
@@ -10835,7 +10835,7 @@
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": "2026-10-28",
+   "geldig_van": "2026-11-17",
    "geldig_tot": null,
    "categorie": "Food",
    "url": "https://www.lidl.nl/p/koffiebroodjes/p11039938",
@@ -10844,7 +10844,7 @@
   {
    "winkel": "lidl",
    "id": "11150818",
-   "titel": "RYNECZEK LIDLA Jonagold appels",
+   "titel": "QUALITÉ SUISSE Jonagold appels",
    "merk": null,
    "omschrijving": "1500 g",
    "actie": "nieuwe lage prijs",
@@ -10855,7 +10855,7 @@
    "geldig_van": "2026-11-11",
    "geldig_tot": null,
    "categorie": "F+V",
-   "url": "https://www.lidl.nl/p/ryneczek-lidla-jonagold-appels/p11150818",
+   "url": "https://www.lidl.nl/p/qualite-suisse-jonagold-appels/p11150818",
    "afbeelding": "https://www.lidl.nl/assets/gcp27830028173442aba23fc81c0d45f1fb.png"
   },
   {
@@ -10881,13 +10881,13 @@
    "titel": "Primadonna Olijfolie extra vierge",
    "merk": null,
    "omschrijving": "1 l",
-   "actie": null,
-   "actieprijs": 9.19,
+   "actie": "nieuwe lage prijs",
+   "actieprijs": 9.15,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": "2026-11-16",
-   "geldig_tot": "2026-11-16",
+   "geldig_van": "2026-11-17",
+   "geldig_tot": null,
    "categorie": "Food",
    "url": "https://www.lidl.nl/p/primadonna-olijfolie-extra-vierge/p11208738",
    "afbeelding": "https://www.lidl.nl/assets/gcp452465ee75334bb78c269879b6a31bcd.png"
@@ -11239,12 +11239,12 @@
    "merk": null,
    "omschrijving": "1 Stk.",
    "actie": null,
-   "actieprijs": 2,
+   "actieprijs": 3.99,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": "2026-10-28",
-   "geldig_tot": "2026-11-16",
+   "geldig_van": "2026-11-17",
+   "geldig_tot": "2026-12-08",
    "categorie": "P+F",
    "url": "https://www.lidl.nl/p/conifeer/p11498999",
    "afbeelding": "https://www.lidl.nl/assets/gcp20a92e9643aa4b9cab8a430bf449a7d5.png"
@@ -11477,11 +11477,11 @@
    "merk": null,
    "omschrijving": "700 g",
    "actie": "nieuwe lage prijs",
-   "actieprijs": 2.49,
+   "actieprijs": 2.47,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": "2026-10-28",
+   "geldig_van": "2026-11-17",
    "geldig_tot": null,
    "categorie": "Food",
    "url": "https://www.lidl.nl/p/fries-suikerbrood/p11559166",
