@@ -1,31 +1,31 @@
 {
- "opgehaald_op": "2026-11-20T13:59:14.647Z",
- "datum": "2026-11-20",
+ "opgehaald_op": "2026-11-21T13:27:18.485Z",
+ "datum": "2026-11-21",
  "winkels": {
   "jumbo": {
    "ok": true,
    "aantal": 173,
-   "ms": 1453
+   "ms": 803
   },
   "aldi": {
    "ok": true,
    "aantal": 198,
-   "ms": 151
+   "ms": 1224
   },
   "poiesz": {
    "ok": true,
    "aantal": 162,
-   "ms": 1152
+   "ms": 1035
   },
   "lidl": {
    "ok": true,
    "aantal": 46,
-   "ms": 395
+   "ms": 403
   },
   "ah": {
    "ok": true,
    "aantal": 285,
-   "ms": 3085
+   "ms": 2
   }
  },
  "aanbiedingen": [
@@ -3588,7 +3588,7 @@
    "titel": "Verzamelfiguur",
    "merk": "FUNKO POP!",
    "omschrijving": "Per stuk.",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 8.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -5118,7 +5118,7 @@
    "titel": "Hot Wheels of Jurassic World speelgoed",
    "merk": "MATTEL",
    "omschrijving": "Per stuk/set",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 3.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -5186,7 +5186,7 @@
    "titel": "Doorables knuffel",
    "merk": "DISNEY",
    "omschrijving": "Per stuk",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 9.99,
    "aantal": 1,
    "normaalprijs": null,
