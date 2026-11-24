@@ -1,31 +1,31 @@
 {
- "opgehaald_op": "2026-11-23T15:57:14.446Z",
- "datum": "2026-11-23",
+ "opgehaald_op": "2026-11-24T15:51:24.893Z",
+ "datum": "2026-11-24",
  "winkels": {
   "jumbo": {
    "ok": true,
-   "aantal": 256,
-   "ms": 1684
+   "aantal": 257,
+   "ms": 756
   },
   "aldi": {
    "ok": true,
    "aantal": 224,
-   "ms": 1491
+   "ms": 1016
   },
   "poiesz": {
    "ok": true,
    "aantal": 220,
-   "ms": 1608
+   "ms": 1662
   },
   "lidl": {
    "ok": true,
    "aantal": 64,
-   "ms": 849
+   "ms": 2059
   },
   "ah": {
    "ok": true,
    "aantal": 153,
-   "ms": 316
+   "ms": 248
   }
  },
  "aanbiedingen": [
@@ -2340,6 +2340,23 @@
    "categorie": "Bier en wijn",
    "url": "https://www.jumbo.com/aanbiedingen/la-trappe/3022573",
    "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Weekaanbiedingen/Week%2047/Weekaanbiedingen-Week-47_99.png"
+  },
+  {
+   "winkel": "jumbo",
+   "id": "3024060",
+   "titel": "Gratis glas bij een 6-pack Grimbergen",
+   "merk": null,
+   "omschrijving": null,
+   "actie": "Gratis glas bij 6-pack",
+   "actieprijs": null,
+   "aantal": 1,
+   "normaalprijs": null,
+   "alleen": "online",
+   "geldig_van": "2026-11-18",
+   "geldig_tot": "2026-12-01",
+   "categorie": "Bier en wijn",
+   "url": "https://www.jumbo.com/aanbiedingen/gratis-glas-bij-een-6-pack-grimbergen/3024060",
+   "afbeelding": "https://www.jumbo.com/INTERSHOP/static/WFS/Jumbo-Grocery-Site/-/Jumbo-Grocery/nl_NL/Images_Aanbiedingen/2026/Premiaten/Grimbergen%20Dubbel%20280x280.png"
   },
   {
    "winkel": "jumbo",
