@@ -1,31 +1,31 @@
 {
- "opgehaald_op": "2026-11-27T15:02:14.899Z",
- "datum": "2026-11-27",
+ "opgehaald_op": "2026-11-28T14:10:11.504Z",
+ "datum": "2026-11-28",
  "winkels": {
   "jumbo": {
    "ok": true,
    "aantal": 147,
-   "ms": 1085
+   "ms": 658
   },
   "aldi": {
    "ok": true,
    "aantal": 224,
-   "ms": 810
+   "ms": 910
   },
   "poiesz": {
    "ok": true,
    "aantal": 221,
-   "ms": 1561
+   "ms": 1225
   },
   "lidl": {
    "ok": true,
    "aantal": 64,
-   "ms": 327
+   "ms": 834
   },
   "ah": {
    "ok": true,
    "aantal": 279,
-   "ms": 3268
+   "ms": 7
   }
  },
  "aanbiedingen": [
@@ -3486,7 +3486,7 @@
    "titel": "103-delige houten schilder- en tekenkoffer",
    "merk": "HOME CREATION",
    "omschrijving": "Per set",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 9.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -4115,7 +4115,7 @@
    "titel": "3D-pen",
    "merk": "HOME CREATION",
    "omschrijving": "Per set",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 12.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -4761,7 +4761,7 @@
    "titel": "Navulverpakking 3D-pen",
    "merk": "HOME CREATION",
    "omschrijving": "Per set",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 2.49,
    "aantal": 1,
    "normaalprijs": null,
@@ -4795,7 +4795,7 @@
    "titel": "Sticker- en kleurplatenboek",
    "merk": "DISNEY/TOYSTORY/DISNEY PRINCESS/STITCH/FROZEN/PEPPA PIG/CARS",
    "omschrijving": "Per stuk",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 1.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -4863,7 +4863,7 @@
    "titel": "Hot Wheels Tracks",
    "merk": "MATTEL",
    "omschrijving": "Per set",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 17.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -4898,12 +4898,12 @@
    "merk": "TOYLINO",
    "omschrijving": "Per stuk",
    "actie": null,
-   "actieprijs": 4.99,
+   "actieprijs": null,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
    "geldig_van": "2026-11-28",
-   "geldig_tot": "2026-12-04",
+   "geldig_tot": "2026-11-29",
    "categorie": "Speelgoed",
    "url": "https://www.aldi.nl/product/keyboard-1245912.html",
    "afbeelding": "https://s7g10.scene7.com/is/image/aldinord/product_1245912_main_cms_6_nl_nl_keyboard_cw01_2024"
@@ -4931,7 +4931,7 @@
    "titel": "Digitale kindercamera",
    "merk": "TOYLINO",
    "omschrijving": "Per stuk",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 9.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -5220,7 +5220,7 @@
    "titel": "Schrijfwaren, diamond painting of stickers",
    "merk": "GRINCH",
    "omschrijving": "Per stuk",
-   "actie": null,
+   "actie": "OP=OP",
    "actieprijs": 2.99,
    "aantal": 1,
    "normaalprijs": null,
@@ -10625,14 +10625,14 @@
    "id": "11323339",
    "titel": "Milbona Plakken Goudse jonge kaas",
    "merk": null,
-   "omschrijving": null,
-   "actie": "nieuwe lage prijs",
-   "actieprijs": null,
+   "omschrijving": "500 g",
+   "actie": null,
+   "actieprijs": 2.99,
    "aantal": 1,
    "normaalprijs": null,
    "alleen": null,
-   "geldig_van": null,
-   "geldig_tot": null,
+   "geldig_van": "2026-11-27",
+   "geldig_tot": "2026-12-06",
    "categorie": "Food",
    "url": "https://www.lidl.nl/p/milbona-plakken-goudse-jonge-kaas/p11323339",
    "afbeelding": "https://www.lidl.nl/assets/gcp3c2bfd2fac164e73b5abfd986060e23c.png"
